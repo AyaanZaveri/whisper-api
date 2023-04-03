@@ -4,6 +4,5 @@ sentencepiece==0.1.*
 torch==1.11.*
 transformers==4.*
 uvicorn[standard]==0.17.*
-faster-whisper==0.3.0
 yt-dlp==2023.3.4
 ffmpeg-python==0.2.0
