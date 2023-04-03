@@ -2,8 +2,9 @@ fastapi==0.74.*
 requests==2.27.*
 sentencepiece==0.1.*
 torch==1.11.*
-faster-whisper
 transformers==4.*
 uvicorn[standard]==0.17.*
+faster-whisper==0.3.0
 yt-dlp==2023.3.4
 ffmpeg-python==0.2.0
+gradio
