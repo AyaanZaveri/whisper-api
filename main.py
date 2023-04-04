@@ -1,5 +1,7 @@
 import gradio_client as grc
 from fastapi import FastAPI
+import json
+from pathlib2 import Path
 
 app = FastAPI()
 
@@ -11,4 +13,5 @@ async def predict(url: str, word_timestamps: str = "false", model: str = "tiny")
     while not job.done():
         pass
 
-    return job.result()
+    contents = Path(job.result()).read_text()
+    return json.loads(contents)
