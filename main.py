@@ -5,7 +5,7 @@ from pathlib2 import Path
 
 app = FastAPI()
 
-generator_client = grc.Client("ayaanzaveri/faster-whisper-api-main", hf_token="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")
+generator_client = grc.Client("ayaanzaveri/faster-whisper-api-main", hf_token="")
 
 @app.get("/predict")
 async def predict(url: str, word_timestamps: str = "false", model: str = "tiny"):
